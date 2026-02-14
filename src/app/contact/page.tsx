@@ -52,8 +52,8 @@ const contactMethods = [
     icon: MapPin,
     title: "Visit Us",
     value: site.contact.address,
-    href: "https://maps.google.com/?q=Bhagirath+Palace+Delhi",
-    desc: "India's largest electrical market, near Chandni Chowk metro",
+    href: site.contact.mapUrl,
+    desc: "Vasundra, Ghaziabad — Get directions on Google Maps",
     color: "bg-rose-50 text-rose-600",
     external: true,
   },
@@ -153,8 +153,8 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <p className="text-xs text-gray-500 mt-4">
-                  WhatsApp messages are responded to during business hours.
-                  For urgent queries, please call directly.
+                  WhatsApp messages are responded to during business hours. For
+                  urgent queries, please call directly.
                 </p>
               </CardContent>
             </Card>
@@ -229,11 +229,7 @@ export default function ContactPage() {
                   Call Now
                 </a>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="rounded-lg"
-              >
+              <Button asChild variant="outline" className="rounded-lg">
                 <Link href="/products">
                   Browse Products
                   <ArrowRight className="ml-2 h-4 w-4" />

@@ -142,9 +142,7 @@ export default async function ProductCategoryPage({ params }: Props) {
                     variant="outline"
                     className="border-[#0c2340] text-[#0c2340] hover:bg-[#0c2340] hover:text-white rounded-lg"
                   >
-                    <a
-                      href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
-                    >
+                    <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`}>
                       <Phone className="mr-2 h-4 w-4" />
                       Call Now
                     </a>

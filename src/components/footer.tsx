@@ -111,7 +111,14 @@ export function Footer() {
             <address className="text-sm text-white/60 not-italic space-y-3">
               <div className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 text-white/40 shrink-0 mt-0.5" />
-                <span>{site.contact.address}</span>
+                <a
+                  href={site.contact.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  {site.contact.address}
+                </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-white/40 shrink-0" />
@@ -149,8 +156,15 @@ export function Footer() {
               reserved.
             </p>
             <p>
-              Bhagirath Palace, Chandni Chowk &mdash; India&apos;s largest
-              electrical market
+              Vasundra, Ghaziabad &mdash; Get{" "}
+              <a
+                href={site.contact.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white/80 underline"
+              >
+                directions
+              </a>
             </p>
           </div>
         </div>

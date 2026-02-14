@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="6" fill="#0c2340"/>
+  <!-- Plug body -->
+  <path d="M16 6v8h-2v2h6v-2h-2V6h-2z" fill="white"/>
+  <!-- Left pin -->
+  <rect x="11" y="18" width="2" height="6" rx="1" fill="white"/>
+  <!-- Right pin -->
+  <rect x="19" y="18" width="2" height="6" rx="1" fill="white"/>
+  <!-- Small lightning/spark accent -->
+  <path d="M22 10l-3 4h2l-2.5 5 3-4h-2L22 10z" fill="#34d399" opacity=".9"/>
+</svg>

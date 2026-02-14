@@ -20,7 +20,7 @@ import { site } from "@/lib/site";
 
 export const metadata = {
   title: "About",
-  description: `About ${site.name} — ${site.tagline}. Your trusted electrical supplier in Bhagirath Palace, Delhi.`,
+  description: `About ${site.name} — ${site.tagline}. Your trusted electrical supplier in Vasundra, Ghaziabad.`,
 };
 
 const values = [
@@ -86,7 +86,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/images/hero/about-store.jpg"
-                  alt="Aggarwal Electronics store"
+                  alt="Aggarwal Electricals store"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -103,20 +103,20 @@ export default function AboutPage() {
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   <strong className="text-[#0c2340]">
-                    Aggarwal Electronics
+                    Aggarwal Electricals
                   </strong>{" "}
                   is a trusted name in the electrical wholesale and retail
-                  market, serving customers from Bhagirath Palace &mdash; one of
-                  India&apos;s largest electrical markets. For years, we have
-                  been helping homeowners, contractors, builders, and businesses
-                  find the right electrical products at competitive prices.
+                  market, serving customers from our location in Vasundra,
+                  Ghaziabad. For years, we have been helping homeowners,
+                  contractors, builders, and businesses find the right
+                  electrical products at competitive prices.
                 </p>
                 <p>
                   From switches, sockets, and automation to lighting, wires,
                   inverters, batteries, water geysers, RO systems, chimneys,
-                  switchgears, conduit and flexible pipes, fans, and fancy lights
-                  &mdash; we offer quality products from trusted brands under
-                  one roof.
+                  switchgears, conduit and flexible pipes, fans, and fancy
+                  lights &mdash; we offer quality products from trusted brands
+                  under one roof.
                 </p>
                 <p>
                   Our team is dedicated to helping you choose the right products

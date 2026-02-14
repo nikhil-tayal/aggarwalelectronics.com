@@ -1,11 +1,11 @@
 export const site = {
-  name: "Aggarwal Electronics",
+  name: "Aggarwal Electricals",
   tagline: "Create to Connect",
   heroTagline: "Your one-stop solution for all electrical needs!",
   heroSubtext:
     "Reliable products & trusted brands for homes, businesses & industries. Lighting, Wiring, Switchgear, and much more.",
   description:
-    "One-stop solution for switches, lighting, wires, inverters, fans, and more. Quality electrical products for home and industry in Bhagirath Palace, Delhi.",
+    "One-stop solution for switches, lighting, wires, inverters, fans, and more. Quality electrical products for home and industry. Located in Vasundra, Ghaziabad.",
   nav: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
@@ -143,7 +143,7 @@ export const site = {
     {
       title: "Delhi NCR Distribution",
       description:
-        "Strong presence in Bhagirath Palace ensuring fast and reliable delivery across Delhi NCR.",
+        "Strong presence in Vasundra ensuring fast and reliable delivery across Delhi NCR.",
     },
     {
       title: "Competitive Pricing",
@@ -231,7 +231,7 @@ export const site = {
   testimonials: [
     {
       quote:
-        "Aggarwal Electronics has consistently proven to be a reliable and professional supplier for all our electrical needs. Their team's in-depth knowledge of the industry, coupled with their dedication to providing top-quality products, has made them our go-to partner.",
+        "Aggarwal Electricals has consistently proven to be a reliable and professional supplier for all our electrical needs. Their team's in-depth knowledge of the industry, coupled with their dedication to providing top-quality products, has made them our go-to partner.",
       author: "Rajesh Kumar",
       company: "RK Construction Pvt Ltd",
       rating: 5,
@@ -245,28 +245,28 @@ export const site = {
     },
     {
       quote:
-        "I recently visited Aggarwal Electronics for my home renovation supplies and was impressed with their service. The staff helped me choose durable wiring, reliable switches, and stylish lighting that enhanced my home.",
+        "I recently visited Aggarwal Electricals for my home renovation supplies and was impressed with their service. The staff helped me choose durable wiring, reliable switches, and stylish lighting that enhanced my home.",
       author: "Priya Sharma",
       company: "Delhi NCR",
       rating: 5,
     },
     {
       quote:
-        "Aggarwal Electronics has truly become a part of our team over the years. Their support has been invaluable, always delivering the electrical components we need, exactly when we need them.",
+        "Aggarwal Electricals has truly become a part of our team over the years. Their support has been invaluable, always delivering the electrical components we need, exactly when we need them.",
       author: "Sudhanshu Gupta",
       company: "Blue Star Interiors",
       rating: 5,
     },
     {
       quote:
-        "Best place to buy electrical items in Bhagirath Palace. Great variety, genuine products, and the pricing is very competitive. The team is knowledgeable and helpful.",
+        "Best place to buy electrical items. Great variety, genuine products, and the pricing is very competitive. The team is knowledgeable and helpful.",
       author: "Vikram Mehta",
       company: "VM Electricals",
       rating: 5,
     },
     {
       quote:
-        "We have been purchasing from Aggarwal Electronics for our construction projects. Their bulk pricing, timely delivery and wide product range makes them an ideal supplier for contractors.",
+        "We have been purchasing from Aggarwal Electricals for our construction projects. Their bulk pricing, timely delivery and wide product range makes them an ideal supplier for contractors.",
       author: "Anil Aggarwal",
       company: "Aggarwal Builders",
       rating: 5,
@@ -274,15 +274,15 @@ export const site = {
   ],
   faq: [
     {
-      q: "What does Aggarwal Electronics offer?",
+      q: "What does Aggarwal Electricals offer?",
       a: "We supply a wide range of electrical materials including wires, cables, switches, lights, distribution boxes, geysers, inverters, fans, chimneys, and more — for homes, offices, buildings, and industrial projects.",
     },
     {
       q: "Where is your shop located?",
-      a: "We are located in Bhagirath Palace, Chandni Chowk — one of India's largest electrical markets. Easily accessible from Chandni Chowk metro station.",
+      a: "We are located at 139, Sector 10D, Near Yes Bank, Vasundra, 201012. Get directions on Google Maps.",
     },
     {
-      q: "Who can buy from Aggarwal Electronics?",
+      q: "Who can buy from Aggarwal Electricals?",
       a: "We supply to individual homeowners, builders, contractors, and businesses. Whether you need household essentials or bulk industrial supplies, we've got you covered.",
     },
     {
@@ -298,8 +298,8 @@ export const site = {
       a: "We provide delivery for bulk orders across Delhi NCR and can arrange transport support for larger industrial shipments outside Delhi.",
     },
     {
-      q: "How can I contact Aggarwal Electronics?",
-      a: "Call us at +91 87502 37227, WhatsApp us at the same number, or email contact@aggarwal-electronics.com. You can also visit our shop in Bhagirath Palace.",
+      q: "How can I contact Aggarwal Electricals?",
+      a: "Call us at +91 87502 37227, WhatsApp us at the same number, or email contact@aggarwal-electronics.com. You can also visit our shop at 139, Sector 10D, Vasundra, 201012.",
     },
     {
       q: "What brands do you stock?",
@@ -307,12 +307,11 @@ export const site = {
     },
   ],
   contact: {
-    address: "Bhagirath Palace, Chandni Chowk, Delhi - 110006",
+    address: "139, Sector 10D, Near Yes Bank, Vasundra, 201012",
     phone: "+91 87502 37227",
     email: "contact@aggarwal-electronics.com",
     whatsapp: "918750237227",
     hours: "Mon–Sat: 9:30 AM – 7:30 PM",
-    mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.2!2d77.228!3d28.66!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBhagirath+Palace!5e0!3m2!1sen!2sin!4v1",
+    mapUrl: "https://maps.app.goo.gl/1ux1LEagx4zKZKbNA",
   },
 } as const;

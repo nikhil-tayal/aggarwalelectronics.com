@@ -85,9 +85,7 @@ export default function Home() {
           <AnimateIn>
             <p className="text-center text-lg md:text-xl text-gray-600 leading-relaxed font-light">
               Join us as we{" "}
-              <span className="font-medium text-[#0c2340]">
-                light up homes
-              </span>
+              <span className="font-medium text-[#0c2340]">light up homes</span>
               , power industries, and connect communities, driving{" "}
               <span className="font-medium text-[#0c2340]">
                 progress and innovation
@@ -106,7 +104,7 @@ export default function Home() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
                 <Image
                   src="/images/hero/about-store.jpg"
-                  alt="Aggarwal Electronics store"
+                  alt="Aggarwal Electricals store"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -126,7 +124,7 @@ export default function Home() {
                   Specializing in the safe and dependable transmission of
                   electric power,{" "}
                   <strong className="text-[#0c2340]">
-                    Aggarwal Electronics
+                    Aggarwal Electricals
                   </strong>{" "}
                   represents authentic, trusted and well-established names in
                   India for cables, wires, switchgears, lighting, switches &
@@ -135,8 +133,7 @@ export default function Home() {
                   components.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  Located in Bhagirath Palace &mdash; one of India&apos;s
-                  largest electrical markets &mdash; we serve homeowners,
+                  Located in Vasundra, Ghaziabad &mdash; we serve homeowners,
                   contractors, builders, and businesses with quality products at
                   competitive prices.
                 </p>
@@ -292,8 +289,8 @@ export default function Home() {
                   Our Brands
                 </h2>
                 <p className="text-white/70 max-w-lg mx-auto text-sm">
-                  We stock products from India&apos;s most trusted and
-                  certified electrical brands
+                  We stock products from India&apos;s most trusted and certified
+                  electrical brands
                 </p>
               </div>
             </AnimateIn>
@@ -464,7 +461,7 @@ export default function Home() {
                 Paradigm Shift Into Technology
               </h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Over the years, Aggarwal Electronics has diversified its focus
+                Over the years, Aggarwal Electricals has diversified its focus
                 towards innovative solutions to meet the evolving needs of our
                 customers. From smart home automation to energy-efficient
                 lighting, we offer products that enhance performance and
@@ -556,7 +553,7 @@ export default function Home() {
         <div className="container relative z-10 mx-auto max-w-3xl px-4 md:px-6 text-center">
           <AnimateIn>
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Get Expert Guidance with Aggarwal Electronics
+              Get Expert Guidance with Aggarwal Electricals
             </h2>
             <p className="text-white/70 mb-8 leading-relaxed">
               Elevate your home and business with customised electrical
@@ -627,18 +624,17 @@ export default function Home() {
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <div className="prose prose-sm prose-gray max-w-none">
             <h2 className="text-xl font-bold text-[#0c2340] mb-4">
-              Aggarwal Electronics &ndash; Your Trusted Electrical Wholesale
-              Supplier in Delhi
+              Aggarwal Electricals &ndash; Your Trusted Electrical Supplier
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Welcome to Aggarwal Electronics &ndash; the leading supplier of
-              electrical goods and materials in Bhagirath Palace, Chandni Chowk.
-              We specialize in wires, cables, switches, panels, lighting
-              solutions, and more for homes, offices, shops, factories, and
-              commercial buildings.
+              Welcome to Aggarwal Electricals &ndash; your trusted supplier of
+              electrical goods and materials in Vasundra, Ghaziabad. We
+              specialize in wires, cables, switches, panels, lighting solutions,
+              and more for homes, offices, shops, factories, and commercial
+              buildings.
             </p>
             <h3 className="text-lg font-semibold text-[#0c2340] mb-3">
-              Top Electrical Supplies at Aggarwal Electronics
+              Top Electrical Supplies at Aggarwal Electricals
             </h3>
             <div className="grid sm:grid-cols-2 gap-x-8 gap-y-1 text-sm text-gray-600 mb-6">
               {[
@@ -660,14 +656,14 @@ export default function Home() {
               ))}
             </div>
             <h3 className="text-lg font-semibold text-[#0c2340] mb-3">
-              Why Aggarwal Electronics?
+              Why Aggarwal Electricals?
             </h3>
             <div className="grid sm:grid-cols-2 gap-x-8 gap-y-1 text-sm text-gray-600 mb-6">
               {[
                 "Wholesale pricing with quality assurance",
                 "Direct supplier for branded goods",
                 "Large inventory with ready stock",
-                "Location advantage in Bhagirath Palace",
+                "Location in Vasundra, Ghaziabad",
                 "Personalized support for bulk buyers",
                 "Delhi NCR delivery available",
               ].map((item, i) => (

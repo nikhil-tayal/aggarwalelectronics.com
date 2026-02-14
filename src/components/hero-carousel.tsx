@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     src: "/images/hero/hero-electrical-store.jpg",
-    alt: "Aggarwal Electronics - Your trusted electrical partner",
+    alt: "Aggarwal Electricals - Your trusted electrical partner",
   },
   {
     src: "/images/hero/hero-wires.jpg",

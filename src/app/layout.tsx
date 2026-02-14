@@ -13,19 +13,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} — Electrical Appliances & Solutions | Bhagirath Palace, Delhi`,
+    default: `${site.name} — Electrical Appliances & Solutions | Vasundra, Ghaziabad`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
   keywords: [
-    "electrical shop delhi",
-    "bhagirath palace electrical",
+    "electrical shop ghaziabad",
+    "vasundra electrical",
     "switches",
     "wires",
     "lighting",
     "fans",
     "inverters",
-    "aggarwal electronics",
+    "aggarwal electricals",
   ],
 };
 
