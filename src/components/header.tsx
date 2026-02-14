@@ -94,23 +94,26 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Button
-              asChild
-              size="sm"
-              className="ml-2 bg-[#0c2340] hover:bg-[#1a3a5c] text-white"
+            <a
+              href={`https://wa.me/${site.contact.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 inline-flex h-8 items-center justify-center rounded-md bg-[#0c2340] px-3 text-sm font-semibold text-white opacity-100 shadow-sm transition-colors hover:bg-[#1a3a5c] hover:text-white"
             >
-              <a
-                href={`https://wa.me/${site.contact.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Quote
-              </a>
-            </Button>
+              Get Quote
+            </a>
           </nav>
 
-          {/* Mobile menu */}
+          {/* Mobile: Get Quote + menu */}
           <div className="flex items-center gap-2 md:hidden">
+            <a
+              href={`https://wa.me/${site.contact.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-9 items-center justify-center rounded-lg bg-[#0c2340] px-4 text-sm font-semibold text-white opacity-100 shadow-sm transition-colors hover:bg-[#1a3a5c]"
+            >
+              Get Quote
+            </a>
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label="Open menu">
