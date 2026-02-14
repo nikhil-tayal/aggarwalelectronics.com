@@ -1,26 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { site } from "@/lib/site";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: site.name,
+    default: `${site.name} — Electrical Appliances & Solutions | Bhagirath Palace, Delhi`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  keywords: [
+    "electrical shop delhi",
+    "bhagirath palace electrical",
+    "switches",
+    "wires",
+    "lighting",
+    "fans",
+    "inverters",
+    "aggarwal electronics",
+  ],
 };
 
 export default function RootLayout({
@@ -30,11 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
-      >
+      <body className={`${inter.variable} antialiased font-sans`}>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
