@@ -340,23 +340,27 @@ export default function Home() {
                 competitive prices.
               </p>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={`https://wa.me/${site.contact.whatsapp}?text=Hi, I need a quote for wires and cables`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex h-10 items-center justify-center rounded-lg bg-white px-5 text-sm font-semibold text-[#0c2340] shadow-lg transition-colors hover:bg-gray-100"
-                >
-                  Get Quote
-                </a>
                 <Button
                   asChild
-                  variant="outline"
-                  className="border-white/40 text-white hover:bg-white/10 rounded-lg font-semibold"
+                  className="bg-white text-[#0c2340] hover:bg-gray-100 rounded-lg font-semibold"
                 >
                   <Link href="/products/wires">
                     Explore Wires & Cables
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-white/30 text-[#0c2340] hover:bg-black/10 hover:text-white rounded-lg"
+                >
+                  <a
+                    href={`https://wa.me/${site.contact.whatsapp}?text=Hi, I need a quote for wires and cables`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get Quote
+                  </a>
                 </Button>
               </div>
             </AnimateIn>
@@ -557,21 +561,26 @@ export default function Home() {
               products for your needs.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href={`https://wa.me/${site.contact.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center rounded-lg bg-white px-6 text-base font-semibold text-[#0c2340] shadow-lg transition-colors hover:bg-gray-100"
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-[#0c2340] hover:bg-gray-100 rounded-lg font-semibold"
               >
-                WhatsApp Us
-              </a>
+                <Link href="/contact">Contact Us</Link>
+              </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white/40 text-white hover:bg-white/10 rounded-lg font-semibold"
+                className="border-white/30 text-white hover:bg-white/10 rounded-lg font-semibold"
               >
-                <Link href="/contact">Contact Us</Link>
+                <a
+                  href={`https://wa.me/${site.contact.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp Us
+                </a>
               </Button>
             </div>
           </AnimateIn>
