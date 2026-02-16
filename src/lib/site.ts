@@ -1,6 +1,25 @@
+// Local product images from src/assets/products; fallback to Unsplash for categories without assets.
+import switchImg from "@/assets/products/switches-1.jpg";
+import socketImg from "@/assets/products/socket.jpg";
+import wiresImg from "@/assets/products/wires-cables.jpg";
+import inverterImg from "@/assets/products/inverter.jpg";
+import batteryImg from "@/assets/products/battery.jpg";
+import geyserImg from "@/assets/products/gyeser.jpg";
+import roImg from "@/assets/products/ro.jpg";
+import fansImg from "@/assets/products/fans.webp";
+import fancyLightsImg from "@/assets/products/fancy-lights.webp";
+import chimneyImg from "@/assets/products/chimney.webp";
+import lightingImg from "@/assets/products/lightning.webp";
+import conduitPipeImg from "@/assets/products/Conduit-Pipe-Fittings.jpeg";
+import switchgearImg from "@/assets/products/swicth-gear.webp";
+import flexiblePipeImg from "@/assets/products/flexible-pipe.jpg";
+
+const U = (id: string, w = 800, h = 800) =>
+  `https://images.unsplash.com/photo-${id}?w=${w}&h=${h}&fit=crop&q=80`;
+
 export const site = {
   name: "Aggarwal Electricals",
-  tagline: "Create to Connect",
+  tagline: "All electricals under one roof",
   heroTagline: "Your one-stop solution for all electrical needs!",
   heroSubtext:
     "Reliable products & trusted brands for homes, businesses & industries. Lighting, Wiring, Switchgear, and much more.",
@@ -17,7 +36,7 @@ export const site = {
       id: "switch",
       label: "Switch",
       slug: "switch",
-      image: "/images/products/switch.jpg",
+      image: switchImg,
       description:
         "Premium modular switches from Anchor, Havells, Legrand and more. Available in various designs, finishes and configurations for residential and commercial use.",
     },
@@ -25,7 +44,7 @@ export const site = {
       id: "socket",
       label: "Socket",
       slug: "socket",
-      image: "/images/products/socket.jpg",
+      image: socketImg,
       description:
         "Wide range of power sockets including 5A, 15A, USB sockets, and international sockets. ISI certified products from top brands.",
     },
@@ -33,7 +52,7 @@ export const site = {
       id: "automation",
       label: "Automation",
       slug: "automation",
-      image: "/images/products/automation.jpg",
+      image: U("1558002038-1055907df827"),
       description:
         "Smart home automation solutions including WiFi switches, smart dimmers, motion sensors, and home control systems from leading brands.",
     },
@@ -41,7 +60,7 @@ export const site = {
       id: "lighting",
       label: "Lighting",
       slug: "lighting",
-      image: "/images/products/lighting.jpg",
+      image: lightingImg,
       description:
         "Complete LED lighting solutions — panel lights, downlights, tube lights, bulbs, spotlights and outdoor lighting from Philips, Havells, Orient and more.",
     },
@@ -49,7 +68,7 @@ export const site = {
       id: "wires",
       label: "Wires & Cables",
       slug: "wires",
-      image: "/images/products/wires.jpg",
+      image: wiresImg,
       description:
         "House wires, industrial cables, flexible wires, and armoured cables. FR-rated, HRFR, and ZHFR options from Polycab, KEI, Finolex and more.",
     },
@@ -57,7 +76,7 @@ export const site = {
       id: "inverters",
       label: "Inverters",
       slug: "inverters",
-      image: "/images/products/inverters.jpg",
+      image: inverterImg,
       description:
         "Home UPS inverters, solar inverters, and industrial inverters. Pure sine wave technology for reliable power backup from Luminous, Microtek and more.",
     },
@@ -65,7 +84,7 @@ export const site = {
       id: "batteries",
       label: "Batteries",
       slug: "batteries",
-      image: "/images/products/batteries.jpg",
+      image: batteryImg,
       description:
         "Inverter batteries, tubular batteries, and flat plate batteries. Long-lasting performance from Luminous, Amaron, Livfast and Exide.",
     },
@@ -73,7 +92,7 @@ export const site = {
       id: "water-geyser",
       label: "Water Geyser",
       slug: "water-geyser",
-      image: "/images/products/water-geyser.jpg",
+      image: geyserImg,
       description:
         "Instant and storage water heaters in various capacities. Energy-efficient geysers from Havells, Crompton, AO Smith and Bajaj.",
     },
@@ -81,7 +100,7 @@ export const site = {
       id: "water-ro",
       label: "Water RO",
       slug: "water-ro",
-      image: "/images/products/water-ro.jpg",
+      image: roImg,
       description:
         "RO water purifiers, UV purifiers, and water softeners. Clean drinking water solutions from Kent, Livpure, Aquaguard and more.",
     },
@@ -89,7 +108,7 @@ export const site = {
       id: "chimneys",
       label: "Chimneys",
       slug: "chimneys",
-      image: "/images/products/chimneys.jpg",
+      image: chimneyImg,
       description:
         "Kitchen chimneys and hoods in wall-mounted, island, and built-in designs. Auto-clean technology from Elica, Faber, Hindware and Glen.",
     },
@@ -97,7 +116,7 @@ export const site = {
       id: "switchgears",
       label: "Switchgears",
       slug: "switchgears",
-      image: "/images/products/switchgears.jpg",
+      image: switchgearImg,
       description:
         "MCBs, RCCBs, distribution boards, isolators, and changeover switches. Industrial and residential switchgear from Havells, Schneider, ABB and Siemens.",
     },
@@ -105,7 +124,7 @@ export const site = {
       id: "conduit-pipe",
       label: "Conduit Pipe",
       slug: "conduit-pipe",
-      image: "/images/products/conduit-pipe.jpg",
+      image: conduitPipeImg,
       description:
         "PVC conduit pipes and fittings for concealed wiring. Heavy gauge, medium gauge and light gauge options from Precision, Supreme and Finolex.",
     },
@@ -113,7 +132,7 @@ export const site = {
       id: "flexible-pipe",
       label: "Flexible Pipe",
       slug: "flexible-pipe",
-      image: "/images/products/flexible-pipe.jpg",
+      image: flexiblePipeImg,
       description:
         "Flexible PVC pipes and corrugated conduits for wire protection. Available in various sizes and ratings for residential and industrial use.",
     },
@@ -121,7 +140,7 @@ export const site = {
       id: "fans",
       label: "Fans",
       slug: "fans",
-      image: "/images/products/fans.jpg",
+      image: fansImg,
       description:
         "Ceiling fans, exhaust fans, table fans, pedestal fans and BLDC energy-saving fans. Decorative and high-speed options from Havells, Orient, Crompton.",
     },
@@ -129,7 +148,7 @@ export const site = {
       id: "fancy-lights",
       label: "Fancy Lights",
       slug: "fancy-lights",
-      image: "/images/products/fancy-lights.jpg",
+      image: fancyLightsImg,
       description:
         "Decorative chandeliers, pendant lights, wall sconces, and designer lamps. Premium fancy lighting for homes, offices and commercial spaces.",
     },

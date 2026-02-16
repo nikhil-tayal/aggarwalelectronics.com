@@ -85,9 +85,9 @@ export function HomeHero() {
           </div>
         </div>
 
-        {/* Hero carousel */}
+        {/* Hero carousel - full width */}
         <motion.div
-          className="container mx-auto max-w-5xl px-4 md:px-6"
+          className="w-full"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7 }}
@@ -96,35 +96,40 @@ export function HomeHero() {
         </motion.div>
 
         {/* Product categories strip */}
-        <div className="mt-8 pb-10 md:pb-14">
+        <div className="mt-8 pb-12 md:pb-16">
           <motion.div
             className="container mx-auto max-w-6xl px-4 md:px-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
           >
-            <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+            <p className="text-center text-sm font-medium text-white/60 mb-4">
+              Product categories
+            </p>
+            <div className="flex gap-4 overflow-x-auto pb-3 scrollbar-hide snap-x snap-mandatory">
               {site.products.slice(0, 10).map((p, i) => (
                 <motion.div
                   key={p.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7 + i * 0.05 }}
+                  className="snap-center shrink-0"
                 >
                   <Link
                     href={`/products/${p.slug}`}
-                    className="flex shrink-0 flex-col items-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm px-4 py-3 transition-all duration-300 hover:bg-white/20 hover:scale-105 min-w-[90px] border border-white/5"
+                    className="flex flex-col items-center gap-3 rounded-2xl bg-white/10 backdrop-blur-sm px-5 py-4 transition-all duration-300 hover:bg-white/20 hover:scale-[1.02] min-w-[104px] border border-white/10 hover:border-white/20"
                   >
-                    <div className="relative w-10 h-10 rounded-lg overflow-hidden bg-white/10">
+                    <div className="relative w-20 h-20 rounded-xl overflow-hidden bg-white/10 shrink-0 ring-1 ring-white/5">
                       <Image
                         src={p.image}
                         alt={p.label}
-                        width={40}
-                        height={40}
-                        className="rounded-lg object-cover w-full h-full"
+                        width={80}
+                        height={80}
+                        className="rounded-xl object-cover w-full h-full"
+                        sizes="80px"
                       />
                     </div>
-                    <span className="text-[11px] font-medium text-white/90 text-center leading-tight">
+                    <span className="text-xs font-medium text-white/90 text-center leading-tight max-w-[90px]">
                       {p.label}
                     </span>
                   </Link>
@@ -134,13 +139,14 @@ export function HomeHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2 }}
+                className="snap-center shrink-0"
               >
                 <Link
                   href="/products"
-                  className="flex shrink-0 items-center justify-center rounded-xl border border-white/20 px-6 py-3 text-xs font-semibold text-white transition-all duration-300 hover:bg-white/10 hover:border-white/40 min-w-[100px]"
+                  className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/20 bg-white/5 px-6 py-4 min-w-[104px] h-full min-h-[140px] text-xs font-semibold text-white transition-all duration-300 hover:bg-white/10 hover:border-white/40"
                 >
                   View All
-                  <ArrowRight className="ml-1.5 h-3 w-3" />
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
               </motion.div>
             </div>

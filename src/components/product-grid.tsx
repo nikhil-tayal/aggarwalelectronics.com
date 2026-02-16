@@ -19,7 +19,7 @@ export function ProductGrid() {
         <AnimateStaggerItem key={product.id}>
           <Link href={`/products/${product.slug}`}>
             <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100 group rounded-xl">
-              <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+              <div className="relative aspect-square w-full overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
                 <Image
                   src={product.image}
                   alt={product.label}

@@ -367,7 +367,10 @@ export default function Home() {
             <AnimateIn delay={0.1}>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/products/wires.jpg"
+                  src={
+                    site.products.find((p) => p.slug === "wires")?.image ??
+                    "/images/products/wires.jpg"
+                  }
                   alt="Electrical wires and cables"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -572,7 +575,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 rounded-lg font-semibold"
+                className="border-white/30 text-[#0c2340]  hover:bg-black/10 hover:text-white rounded-lg font-semibold"
               >
                 <a
                   href={`https://wa.me/${site.contact.whatsapp}`}

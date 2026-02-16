@@ -5,26 +5,37 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import slide1 from "@/assets/carousel/slide-1.jpg";
+import slide2 from "@/assets/carousel/slide-2.webp";
+import slide3 from "@/assets/carousel/slide-3.png";
+import slide4 from "@/assets/carousel/slide-4.jpg";
+import slide5 from "@/assets/carousel/slide-5.jpg";
+
 const slides = [
   {
-    src: "/images/hero/hero-electrical-store.jpg",
-    alt: "Aggarwal Electricals - Your trusted electrical partner",
+    src: slide1,
+    alt: "Aggarwal Electricals - Electrical products",
+    objectFit: "cover" as const,
   },
   {
-    src: "/images/hero/hero-wires.jpg",
-    alt: "Premium wires and cables from top brands",
+    src: slide2,
+    alt: "Quality switches and wiring",
+    objectFit: "cover" as const,
   },
   {
-    src: "/images/hero/hero-lighting.jpg",
-    alt: "Modern lighting solutions for every space",
+    src: slide3,
+    alt: "Lighting and electrical solutions",
+    objectFit: "contain" as const,
   },
   {
-    src: "/images/hero/hero-industrial.jpg",
-    alt: "Industrial electrical solutions",
+    src: slide4,
+    alt: "Wires, cables and switchgear",
+    objectFit: "contain" as const,
   },
   {
-    src: "/images/hero/slide1.jpg",
-    alt: "Complete electrical product range",
+    src: slide5,
+    alt: "Your trusted electrical partner",
+    objectFit: "cover" as const,
   },
 ];
 
@@ -48,7 +59,8 @@ export function HeroCarousel() {
 
   return (
     <div
-      className="relative mx-auto max-w-4xl aspect-[16/7] rounded-2xl overflow-hidden group shadow-2xl shadow-black/20"
+      className="relative w-[90%] mx-auto overflow-hidden group shadow-2xl shadow-black/20 bg-black/20 rounded-xl"
+      style={{ aspectRatio: "21/9" }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -59,16 +71,19 @@ export function HeroCarousel() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
-          className="absolute inset-0"
+          className="absolute inset-0 w-full h-full min-w-0 min-h-0"
         >
-          <Image
-            src={slides[current].src}
-            alt={slides[current].alt}
-            fill
-            sizes="(max-width: 1024px) 100vw, 896px"
-            className="object-cover"
-            priority={current === 0}
-          />
+          <div className="relative w-full h-full min-w-full min-h-full">
+            <Image
+              src={slides[current].src}
+              alt={slides[current].alt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 896px"
+              className="object-center min-w-full min-h-full"
+              style={{ objectFit: slides[current].objectFit }}
+              priority={current === 0}
+            />
+          </div>
         </motion.div>
       </AnimatePresence>
 
